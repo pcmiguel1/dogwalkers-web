@@ -64,6 +64,10 @@ main {
   color: white;
 }
 
+#infoheader {
+  margin-top: 8em;
+}
+
 #infoheader h2 {
   font-size: 30px;
   font-weight: 300;
@@ -110,6 +114,10 @@ main {
 
 #info h5 {
   font-size: 25px;
+}
+
+#info {
+  margin-top: 8em;
 }
 
 #list-includesmore {
@@ -180,11 +188,14 @@ main {
 #reviews-list {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3em;
 }
 
 #reviews .card {
   width: 400px;
+  min-width: 400px;
   max-width: 400px;
   height: 300px;
   background-color: white;
@@ -193,6 +204,8 @@ main {
   -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.15);
   box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.15);
+  margin-left: 2em;
+  margin-top: 4.5em;
 }
 
 #reviews .card img {
@@ -247,4 +260,142 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3em;
+}
+
+#footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-icons {
+  display: flex;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  
+  #header-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  #header-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  #market-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  #howwork h1 {
+    text-align: center;
+  }
+
+  #updates h1 {
+    text-align: center;
+  }
+
+  #reviews h1, #reviews p {
+    text-align: center;
+  }
+
+  #updates-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  #updates-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  #list-includes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    background-position-y: -13em;
+  }
+
+  #info {
+    margin-top: 0;
+  }
+
+  #infoheader {
+    margin-top: 2em;
+  }
+  
+  #reviews-list {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: 4em;
+  }
+
+}
+
+@media only screen and (max-width: 585px) {
+  
+  .navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #list {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  
+  main {
+    background-position-y: -8.5em;
+  }
+
+  #footer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #footer-header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-market {
+    margin-top: 2em;
+  }
+
+  #footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #social-icons {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
 }
